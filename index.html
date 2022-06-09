@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <form autocomplete="off">
+        <input
+          type="text"
+          id="search-bar"
+          name="city"
+          placeholder="Search for a location"
+        />
+        <button id="search-btn" type="submit">
+          <img src="img/icons8-search-60.png" alt="search">
+        </button>
+      </form>
+      <div id="weather-result">
+        <h2 id="city"></h2>
+        <h1 id="temp"></h1>
+        <h3 id="condition"></h2>
+        <div id="weather-details">
+          <p id="feels-like">Feels like:</p>
+          <p id="feels-like-data"></p>
+          <p id="wind">Wind:</p>
+          <p id="wind-data"></p>
+          <p id="humidity">Humidity:</p>
+          <p id="humidity-data"></p>
+        </div>
+        <div id="switch-degrees">
+          <p>°C</p>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+          <p>°F</p>
+        </div>
+      </div>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>
