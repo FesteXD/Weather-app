@@ -19,13 +19,12 @@ let units = 'metric';
 async function convertNameToCords() {
   try {
     let response = await fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=760c1f0fb879d7814a0c107f1028662f`,
+      `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=760c1f0fb879d7814a0c107f1028662f`,
       {
         mode: 'cors',
       }
     );
     let getAPIData = await response.json();
-    // console.log(getAPIData);
     return {
       lat: getAPIData[0].lat,
       lon: getAPIData[0].lon,
